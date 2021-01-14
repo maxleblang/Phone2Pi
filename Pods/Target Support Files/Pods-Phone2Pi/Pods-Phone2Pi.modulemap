@@ -1,0 +1,6 @@
+framework module Pods_Phone2Pi {
+  umbrella header "Pods-Phone2Pi-umbrella.h"
+
+  export *
+  module * { export * }
+}
