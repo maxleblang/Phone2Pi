@@ -103,13 +103,19 @@
                                     <action selector="homeSegueButton:" destination="UN5-eM-mui" eventType="touchUpInside" id="866-L5-oHa"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="XUN-9O-psG" userLabel="Slider 1">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="XUN-9O-psG" userLabel="S1">
                                 <rect key="frame" x="18" y="126" width="357" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="S1Slider:" destination="UN5-eM-mui" eventType="valueChanged" id="sfj-bm-yWi"/>
+                                </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="aUM-0U-JJX" userLabel="Slider 2">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="aUM-0U-JJX" userLabel="S2">
                                 <rect key="frame" x="18" y="209" width="357" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="S2Slider:" destination="UN5-eM-mui" eventType="valueChanged" id="tYE-DP-Yxi"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="S1:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVt-Bz-0QY">
                                 <rect key="frame" x="171" y="98" width="31" height="20"/>
@@ -119,7 +125,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmf-qi-dto">
-                                <rect key="frame" x="202" y="98" width="41" height="20"/>
+                                <rect key="frame" x="202" y="98" width="63" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -133,7 +139,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nzg-X1-GDa">
-                                <rect key="frame" x="202" y="181" width="41" height="20"/>
+                                <rect key="frame" x="202" y="181" width="63" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -144,26 +150,38 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="29"/>
                                 <state key="normal" title="B1"/>
+                                <connections>
+                                    <action selector="B1Button:" destination="UN5-eM-mui" eventType="touchUpInside" id="Gx9-Qt-NKy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ccn-bV-ULK">
                                 <rect key="frame" x="211" y="246" width="182" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="29"/>
                                 <state key="normal" title="B2"/>
+                                <connections>
+                                    <action selector="B2Button:" destination="UN5-eM-mui" eventType="touchUpInside" id="HKa-YJ-Tol"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="GYI-ki-oud">
                                 <rect key="frame" x="20" y="348" width="182" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="29"/>
                                 <state key="normal" title="B3"/>
+                                <connections>
+                                    <action selector="B3Button:" destination="UN5-eM-mui" eventType="touchUpInside" id="3NJ-Sd-KVP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="A3M-jy-hgu">
                                 <rect key="frame" x="211" y="348" width="182" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="29"/>
                                 <state key="normal" title="B4"/>
+                                <connections>
+                                    <action selector="B4Button:" destination="UN5-eM-mui" eventType="touchUpInside" id="LtN-9y-GEB"/>
+                                </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zcn-cy-bKi">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type Message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zcn-cy-bKi" userLabel="T1">
                                 <rect key="frame" x="21" y="454" width="292" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
@@ -174,12 +192,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="26"/>
                                 <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="T1SendButton:" destination="UN5-eM-mui" eventType="touchUpInside" id="4ed-5o-S6V"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xjr-9F-gzJ"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                     </view>
                     <connections>
+                        <outlet property="S1ValText" destination="zmf-qi-dto" id="vOO-iE-XGd"/>
+                        <outlet property="S2ValText" destination="Nzg-X1-GDa" id="0nc-Zc-I8l"/>
+                        <outlet property="T1Field" destination="zcn-cy-bKi" id="HmH-lR-4H5"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="homeSegue" modalTransitionStyle="flipHorizontal" id="Zwa-Jx-1dv"/>
                     </connections>
                 </viewController>
