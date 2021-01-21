@@ -15,6 +15,7 @@
 		961337DE25A5482B00C88CE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 961337DD25A5482B00C88CE6 /* Assets.xcassets */; };
 		961337E125A5482B00C88CE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 961337DF25A5482B00C88CE6 /* LaunchScreen.storyboard */; };
 		9615DD0225A582B20032C191 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9615DD0125A582B20032C191 /* MainViewController.swift */; };
+		967C40C725B8028B003758FD /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967C40C625B8028B003758FD /* OptionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		961337E025A5482B00C88CE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		961337E225A5482B00C88CE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9615DD0125A582B20032C191 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		967C40C625B8028B003758FD /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
 		AE9AB2AC3745580759D85ABD /* Pods_Phone2Pi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Phone2Pi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -86,6 +88,7 @@
 				961337D625A5482900C88CE6 /* SceneDelegate.swift */,
 				961337D825A5482900C88CE6 /* HomeViewController.swift */,
 				9615DD0125A582B20032C191 /* MainViewController.swift */,
+				967C40C625B8028B003758FD /* OptionsViewController.swift */,
 				961337DA25A5482900C88CE6 /* Main.storyboard */,
 				961337DD25A5482B00C88CE6 /* Assets.xcassets */,
 				961337DF25A5482B00C88CE6 /* LaunchScreen.storyboard */,
@@ -212,6 +215,7 @@
 				961337D525A5482900C88CE6 /* AppDelegate.swift in Sources */,
 				961337D725A5482900C88CE6 /* SceneDelegate.swift in Sources */,
 				9615DD0225A582B20032C191 /* MainViewController.swift in Sources */,
+				967C40C725B8028B003758FD /* OptionsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
