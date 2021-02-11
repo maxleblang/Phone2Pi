@@ -36,12 +36,32 @@ class HomeViewController: UIViewController {
         }
     }
     
+    //send user to the README with instructions on the Phone2Pi github
+    @IBAction func helpButton(_ sender: UIButton) {
+        UIApplication.shared.open(URL(string:"https://github.com/mleblan67/Phone2Pi/blob/main/README.md")! as URL, options: [:], completionHandler: nil)
+    }
+    
+    
     //Prepare hostname and port data to send over to MainViewController
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let mainVC = segue.destination as! MainViewController
         mainVC.hostname = hostname
         mainVC.port = port
     }
+    
+    //close keyaboard with return key
+    @IBAction func hostnameDone(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    @IBAction func portDone(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    
+    
+    
+    
+    
+    
    
 }
 

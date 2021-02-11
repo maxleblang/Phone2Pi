@@ -90,4 +90,9 @@ class MainViewController: UIViewController {
         //reset text field
         T1Field.text = ""
     }
+    //close T1 with return key
+    @IBAction func T1Done(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    
 }

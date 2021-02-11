@@ -25,6 +25,39 @@ class OptionsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    //close keybaords with return button
+    @IBAction func S1MinDone(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    @IBAction func S1MaxDone(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    @IBAction func S2MinDone(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    @IBAction func S2MaxDone(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    @IBAction func B1Done(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    @IBAction func B2Done(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    @IBAction func B3Done(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    @IBAction func B4Done(_ sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    
+    
+    
+    
+    
+    
+    
+    //Save all settings and update variables in MainViewController
     @IBAction func saveButton(_ sender: UIButton) {
         if let mainVC = presentingViewController as? MainViewController {
             //Push all data from this VC to MainViewController
