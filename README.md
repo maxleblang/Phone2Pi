@@ -31,7 +31,28 @@ sudo apt-get install python3-pip
 sudo pip3 install paho-mqtt
 ```
 # MQTT Subscriber Script
-We need to create a subscriber python script that allows the Pi to connect to the MQTT broker the app is serving up. This will allow the Pi to receieve and process data coming from your phone.
+We need to create a subscriber python script that allows the Pi to connect to the MQTT broker the app is serving up. This will allow the Pi to receieve and process data coming from your phone. Here's the completed subscriber script:
+```python
+import paho.mqtt.client as mqtt
+
+# MQTT Variables
+clientName = "P2P"
+serverAddress = "pibot"
+mqttClient = mqtt.Client(clientName, True, None, mqtt.MQTTv31)
+
+def messageDecoder(client, userdata, msg):
+  message = msg.payload.decode(encoding='UTF-8')
+  print(message)
+
+# Set up calling functions
+mqttClient.on_connect = mqttClient.subscribe("p2p")
+mqttClient.on_message = messageDecoder
+
+# Connect to server
+mqttClient.connect(serverAddress,port=1883,keepalive=60)
+mqttClient.loop_forever()
+```
+Let's break down what each part of this script does.
 ## Import Libraries
 First, we need to import our MQTT library. We will import it as mqtt so that it's easier to call
 ```python
@@ -41,7 +62,7 @@ import paho.mqtt.client as mqtt
 Next, we need to set up some variables to feed into our MQTT client object: clientName and serverAddress. You can make the clientName whatever you want, but make sure the **serverAddress is whatever you made the Pi's hostname!** I made my Pi's hostname pibot in the first part, so that's what I will set serverAddress to be.
 ```python
 clientName = "P2P"
-serverAdrress = "pibot"
+serverAddress = "pibot"
 ```
 Finally let's feed our variables into a client object called mqttClient.
 ```python
@@ -59,6 +80,8 @@ Next, we need to decode the incoming message from the app into usable data. For 
 def messageDecoder(client, userdata, msg):
   message = msg.payload.decode(encoding='UTF-8')
   print(message)
+  
+...
 
 mqttClient.on_message = messageDecoder
 ```
