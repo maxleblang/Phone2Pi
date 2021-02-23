@@ -42,6 +42,7 @@ mqttClient = mqtt.Client(clientName, True, None, mqtt.MQTTv31)
 
 def messageDecoder(client, userdata, msg):
   message = msg.payload.decode(encoding='UTF-8')
+  #Do stuff with the incoming data
   print(message)
 
 # Set up calling functions
